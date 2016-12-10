@@ -1,0 +1,23 @@
+---
+layout: default
+home: true
+---
+<div class="home">
+    <ul class="post-list">
+        {% for page in site.pages %}
+        {% for tag in page.tags %}
+        {% if tag == 'wedding'%}
+        <li>
+            <a href="{{ page.url | prepend: site.baseurl }}" class="post-list-link">
+                <div class="post-list-info">
+                    <h2 class="post-list-title">{{ page.title }}</h2>
+                </div>
+            </a>
+
+            <img src="{{ page.thumb }}" class="post-list-thumb" />
+        </li>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+    </ul>
+</div>
