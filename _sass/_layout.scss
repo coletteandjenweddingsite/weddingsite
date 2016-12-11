@@ -3,12 +3,33 @@
    ========================================================================== */
 #slider {
   width: 100%;
-  background: url("../images/backgrounds/map.jpg") no-repeat;
-  text-align: center;
+  height: 450px;
+  background: url("../images/coletteandjen/waterfall.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
   position: relative;
+}
+
+#slider .block {
+  color: #E3E3E4;
+}
+#slider .block h1 {
+    line-height: 200%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+#slider .block p {
+  font-size: 23px;
+  line-height: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
 }
 
 
